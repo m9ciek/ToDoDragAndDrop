@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista "Do Zrobienia"</title>
+  <meta http-equiv="Content-Type" content="text/html:charset=UTF-8" > <!-- pozwala używać polskich znaków -->
+  <link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+  <h1>Twoja Lista</h1>
+  <div class="adder"> 
+    <input type="text" class="input" placeholder="Dodaj element do listy" /> <!-- pole do wpisywania tekstu -->
+    <span class="add">+</span> 
+  </div>
+  <ul> <!-- Przykładowe elementy listy -->
+    <li id="node5" class="draggable" draggable="true">Kupić mleko</li>
+    <li id="node6" class="draggable" draggable="true">Wyjść z psem</li>
+    <li id="node7" class="draggable" draggable="true">Zrobić Grilla</li>
+    <li id="node8" class="draggable" draggable="true">Nakarmić kota</li>
+    <li id="node9" class="draggable" draggable="true">Iść na siłownię</li>
+    
+  </ul>
+    <input id="click" type="button" value="Pobierz" onclick="saveToArray()" />
+  <h1>Aby usunąć, upuść poniżej</h1>
+  <div class="dropper" ondrop="drop(event)" ondragover="allowDrop(event)">  <!-- skrypty dla pola upuszczania -->
+  </div>
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

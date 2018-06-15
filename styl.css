@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,800");
+body {
+    background-color: #297C46;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+#click{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display: block;
+    margin:auto;
+}
+
+.dropper{
+    position: relative;
+    width:50%;
+    padding-top: 25px;
+    height:200px;
+    margin: auto;
+    display: block;
+    border: 1px solid white;
+}
+
+.adder {
+    position: relative;
+    width: 250px;
+    margin: auto;
+    display: block;
+}
+
+.adder ::-webkit-input-placeholder {
+    color: #cecece;
+}
+
+.adder .input {
+    outline: none;
+    border: 1px solid white;
+    background-color: #297C46;
+    color: white;
+    height: 50px;
+    width: 250px;
+    padding-left: 10px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    margin-left: -5px;
+}
+
+.adder span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.8;
+    cursor: pointer;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+    -moz-transition: all 200ms;
+    transition: all 200ms;
+    color: white;
+    will-change: transform;
+}
+
+ul {
+    padding: 0px;
+}
+ul .draggable {
+    display: block;
+    will-change: transform;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    height: 55px;
+    list-style-type: none;
+    margin: 10px;
+    background-color: white;
+    color: #297C46;
+    width: 250px;
+    line-height: 3.2;
+    padding-left: 10px;
+    cursor: move;
+    margin: 10px auto;
+    position: relative;
+}
